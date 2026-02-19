@@ -1,0 +1,16 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 60px 20 vw;
+}
+
+body {
+    background: #ffffff;
+     color: #1a1a1a;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
