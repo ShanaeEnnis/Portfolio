@@ -1,34 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <title>Shanae's Coding Gallery</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Shanae's Coding Collage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    
+<!-- Add to style sheet later -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Jersey 10', sans-serif;
+            background: linear-gradient(135deg, #1a001f, #330033);
+            font-size: 30px;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            font-family: 'Jersey 10', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Jersey 10', sans-serif;
+            font-size: 8rem;
+            color: #ff66cc;
+            text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff33cc;
+        }
+
+        .subtitle {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #ffb3ec;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.3);
+        }
+
+        nav a {
+            color: #ff99dd;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 8px #ff66cc;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #ff66cc;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: rgba(255, 102, 204, 0.1);
+            border: 2px solid #ff66cc;
+            border-radius: 15px;
+            padding: 20px;
+            transition: 0.4s;
+            backdrop-filter: blur(10px);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px #ff66cc;
+        }
+
+        .project-card h3 {
+            color: #ff99dd;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: #ff66cc;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff33cc;
+            box-shadow: 0 0 10px #ff66cc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(0,0,0,0.4);
+            color: #ffb3ec;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container"></div>
-        <h1>Shanae's Coding Gallery</h1>
-        <div class="intro">
-            <p>
-                Summary Paragraph and Introduction: Game programming, a subset of game development, is the software development of video games.
-                 Game programming requires substantial skill in software engineering and computer programming in a given language, as well as 
-                 specialization in one or more of the following areas: simulation, computer graphics, artificial intelligence, physics, audio programming, and input. 
-            </p>
 
-            <div class="featured">
-                <p>
-                    Summary Paragraph and Introduction: Game programming, a subset of game development, is the software development of video games.
-                     Game programming requires substantial skill in software engineering.
-                </p>
-            </div>
+<header>
+    <h1>Shanae's Coding Collage </h1>
+    <p class="subtitle">Leveling Up One Line of Code at a Time ✨</p>
+</header>
 
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        Hi! I'm Shanae, a passionate programmer who loves building creative and interactive projects.
+        I enjoy learning new technologies and turning ideas into reality.
+        Welcome to my coding world!
+    </p>
+</section>
 
+<section id="projects">
+    <h2 style="text-align:center; color:#ff66cc; margin-bottom:40px;">✨ My Projects ✨</h2>
 
+    <div class="projects">
 
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Game Project</h3>
+            <p>Description of your game or coding project goes here.</p>
+            <a href="#" class="btn">View Project</a>
         </div>
-        <script src="script.js"></script>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>Java Application</h3>
+            <p>Short explanation about what this program does.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <h3>Website Design</h3>
+            <p>Details about your web development project.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="about">
+    <h2>📬 Contact Me</h2>
+    <p>Email: jaciennis02@gmail.com</p>
+    <p>GitHub: github.com/ShanaeEnnis</p>
+</section>
+
+<footer>
+    © 2026 Shanae's Coding Collage | Designed with Innovation + Fun
+</footer>
+
 </body>
 </html>
